@@ -53,7 +53,7 @@ This project is a full-stack web application built to demonstrate the integratio
 1. Clone the repository from GitHub:
 
    ```bash
-   git clone https://github.com/your-username/project-name.git
+   git clone https://github.com/Sarohaa199/Web-Development.git
    ```
 
 2. Navigate to the project directory:
