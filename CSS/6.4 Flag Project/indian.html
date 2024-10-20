@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indian Flag</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+
+      .flag {
+        width: 900px;
+        height: 450px; /* Adjusted for correct flag ratio */
+      }
+
+      .saffron,
+      .white,
+      .green {
+        width: 100%;
+        height: 33.33%; /* Each section is 1/3rd of the flag */
+      }
+
+      .saffron {
+        background-color: #ff9933;
+      }
+
+      .white {
+        background-color: #ffffff;
+        position: relative;
+      }
+
+      .green {
+        background-color: #128807; 
+      }
+
+      .ashoka-chakra {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        border: 8px solid blue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+      }
+
+      .spoke {
+        width: 2px;
+        height: 55px;
+        background-color: blue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-origin: top;
+        transform: rotate(calc(var(--i) * 30deg));
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flag">
+      <div class="saffron"></div>
+      <div class="white">
+        <div class="ashoka-chakra">
+          <div class="spoke" style="--i: 0"></div>
+          <div class="spoke" style="--i: 1"></div>
+          <div class="spoke" style="--i: 2"></div>
+          <div class="spoke" style="--i: 3"></div>
+          <div class="spoke" style="--i: 4"></div>
+          <div class="spoke" style="--i: 5"></div>
+          <div class="spoke" style="--i: 6"></div>
+          <div class="spoke" style="--i: 7"></div>
+          <div class="spoke" style="--i: 8"></div>
+          <div class="spoke" style="--i: 9"></div>
+          <div class="spoke" style="--i: 10"></div>
+          <div class="spoke" style="--i: 11"></div>
+        </div>
+      </div>
+      <div class="green"></div>
+    </div>
+  </body>
+</html>
