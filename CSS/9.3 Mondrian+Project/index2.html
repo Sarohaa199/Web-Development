@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painting with CSS</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            height: 100vh;
+            padding: 0px;
+            margin: 0px;
+            
+        }
+        .grid-container{
+            display: grid;
+            width: 770px;
+            height: 810px;
+            grid-template-rows: 240px 350px 80px 80px;
+            grid-template-columns: 150px 500px 80px;
+            background-color: black;
+            gap: 20px;
+            
+        }
+        .item{
+            background-color: rgba(255, 255, 255, 0.886);
+        }
+        .white1{
+            border-bottom: 20px solid black;
+        }
+        .red1{
+            background-color: rgb(219, 41, 41);
+            grid-area: 1 / 2 / 3 / 4 ;
+        }
+        .blue{
+            background-color: rgb(57, 57, 225);
+            grid-row: span 2;
+        }
+        .white2{
+            background-color: rgba(255, 255, 255, 0.886);
+            grid-row: span 2;
+        }
+        .yellow{
+            background-color:rgb(255, 221, 0) ;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item white1"></div>
+      <div class="item red1"></div>
+      <div class="item"></div>
+      <div class="item blue"></div>
+      <div class="item white2"></div>
+      <div class="item "></div>
+      <div class="item yellow"></div>
+    </div>
+  </body>
+</html>
